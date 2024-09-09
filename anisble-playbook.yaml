@@ -12,8 +12,8 @@
   tasks:
       - name: Run Python script to create EC2 instance
       shell: |
-        source ~/myenv/bin/activate
-        python3 create-ec2.py
+      source ~/myenv/bin/activate
+      python3 create-ec2.py
       register: ec2_creation_output
 
     - name: Extract EC2 public IP from the script output
